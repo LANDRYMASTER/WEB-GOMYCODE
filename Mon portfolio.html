@@ -11,11 +11,11 @@
     <header>
         <img src="Mon icon.jpg" alt="logo">
         <nav>
-            <a href="">ACCUEIL</a>
-            <a href="">A PROPOS</a>
-            <a href="">TRAVAIL</a>
-            <a href="">CV</a>
-            <a href="">CONTACT</a>
+            <a href="#TITLE">ACCUEIL</a>
+            <a href="#ABOUT">A PROPOS</a>
+            <a href="#WORK">TRAVAIL</a>
+            <a href="#RESUME">CV</a>
+            <a href="#CONTACT">CONTACT</a>
         </nav>
     </header>
 
@@ -24,26 +24,27 @@
     <!-- ceci est le corps de la page -->
 
     <main>
-        <head>
+        <section id="TITLE">
             <h1>LANDRYMASTER</h1>
-            <video src="file/Video.mp4" controls autoplay muted ></video>
-        </head>
-        <section>
+            <video src="file/Video.mp4" controls autoplay muted loop ></video>
+        </section>
+        <hr> <!-- ceci est une ligne transfersalle qui traverse toute la page -->
+        <section id="ABOUT">
             <h3>ABOUT</h3>
             <p> Bonjour, je m'appelle <strong>Ange Landry Bile</strong>, et je suis étudiant en webmastering. Passionné par l'univers numérique et les technologies, en tant qu'amoureux de la culture africaine, je m'inspire profondément de son esthétique et de ses valeurs dans mes projets. Cette inspiration nourrit ma créativité et m'aide à apporter une touche unique et authentique à chacun de mes développements. Mon objectif est de toujours offrir des expériences numériques engageantes, modernes et accessibles. Je serais ravi de discuter de la façon dont nous pourrions travailler ensemble pour donner vie à vos projets</p>
         </section>
         <hr> <!-- ceci est une ligne transfersalle qui traverse toute la page -->
-        <section>
+        <section id="WORK">
             <h3>WORK</h3>
             <p> Bonjour, je m'appelle <strong>Ange Landry Bile</strong>, et je suis étudiant en webmastering. Passionné par l'univers numérique et les technologies, en tant qu'amoureux de la culture africaine, je m'inspire profondément de son esthétique et de ses valeurs dans mes projets. Cette inspiration nourrit ma créativité et m'aide à apporter une touche unique et authentique à chacun de mes développements. Mon objectif est de toujours offrir des expériences numériques engageantes, modernes et accessibles. Je serais ravi de discuter de la façon dont nous pourrions travailler ensemble pour donner vie à vos projets</p>
         </section>
         <hr> <!-- ceci est une ligne transfersalle qui traverse toute la page -->
-        <section>
+        <section id="RESUME">
             <h3>RESUME</h3>
             <p> Bonjour, je m'appelle <strong>Ange Landry Bile</strong>, et je suis étudiant en webmastering. Passionné par l'univers numérique et les technologies, en tant qu'amoureux de la culture africaine, je m'inspire profondément de son esthétique et de ses valeurs dans mes projets. Cette inspiration nourrit ma créativité et m'aide à apporter une touche unique et authentique à chacun de mes développements. Mon objectif est de toujours offrir des expériences numériques engageantes, modernes et accessibles. Je serais ravi de discuter de la façon dont nous pourrions travailler ensemble pour donner vie à vos projets</p>
         </section>
         <hr> <!-- ceci est une ligne transfersalle qui traverse toute la page -->
-        <section>
+        <section id="CONTACT">
             <h3>CONTACT</h3>
             <form action="">
                 <fieldset>
@@ -54,10 +55,23 @@
                     <label for="ChampEmail">Email :</label>
                     <input type="email" name="" id="ChampEmail">
                     <br><br>
-                    <label for="ChampMotif"></label>
+                    <p>Vous etes un :</p>
+                    <input type="radio" name="Typedepersonne" id="Champparticulier">
+                    <label for="Champparticulier">Particulier</label> <br>
+                    <input type="radio" name="Typedepersonne" id="Champentreprise">
+                    <label for="Champentreprise">Entreprise</label>
+                    <br><br>
+                    <label for="ChampMotif">Objet du message :</label>
                     <select name="" id="ChampMotif">
-                        <option value=""></option>
+                        <option value="" hidden="hidden">OBJET</option>
+                        <option value="">Question techniques</option>
+                        <option value="" disabled="disabled">Demande de devis</option>
+                        <option value="">Proposition de collaboration</option>
+                        <option value="" disabled="disabled">Demande de partenariat</option>
                     </select>
+                    <br><br>
+                    <label for="zonedetexte">Message :</label>
+                    <textarea name="" id="zonedetexte"></textarea>
 
                 </fieldset>
             </form>
